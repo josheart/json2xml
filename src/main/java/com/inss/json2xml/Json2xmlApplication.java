@@ -1,5 +1,6 @@
 package com.inss.json2xml;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import service.PersonConverter;
@@ -11,7 +12,4 @@ public class Json2xmlApplication {
 		SpringApplication.run(Json2xmlApplication.class, args);
 	}
 
-
-	PersonConverter personConverter = new PersonConverter();
-        personConverter.serializeXml();
 }

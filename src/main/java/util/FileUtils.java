@@ -1,7 +1,5 @@
 package util;
 
-import model.Person;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;

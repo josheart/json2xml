@@ -5,8 +5,6 @@ import util.FileUtils;
 import util.JsonUtils;
 import util.XmlUtils;
 
-import java.io.InputStream;
-
 public class PersonConverter {
 
     private static FileUtils fileUtils = new FileUtils();
@@ -16,11 +14,11 @@ public class PersonConverter {
     private final static String XML_PATH = "src/main/resources/json/xml.json";
 
 
-    public static Class<?>  deserializePerson() {
+    public Class<?>  deserializePerson() {
         return jsonUtils.deserializeJson(fileUtils.fetchFile(JSON_PATH), Person.class);
     }
 
-    public static void serializeXml() {
+    public void serializeXml() {
         xmlUtils.serializeToXml(Person.class, deserializePerson(), XML_PATH);
     }
 }
