@@ -14,11 +14,11 @@ public class PersonConverter {
     private final static String XML_PATH = "src/main/resources/json/xml.json";
 
 
-    public static Class<?>  deserializePerson() {
+    public Class<?>  deserializePerson() {
         return jsonUtils.deserializeJson(fileUtils.fetchFile(JSON_PATH), Person.class);
     }
 
-    public static void serializeXml() {
+    public void serializeXml() {
         xmlUtils.serializeToXml(Person.class, deserializePerson(), XML_PATH);
     }
 }
