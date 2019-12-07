@@ -5,8 +5,6 @@ import util.FileUtils;
 import util.JsonUtils;
 import util.XmlUtils;
 
-import java.io.InputStream;
-
 public class PersonConverter {
 
     private static FileUtils fileUtils = new FileUtils();
