@@ -1,0 +1,8 @@
+#Ignore Java Files
+*.java
+
+#Ignore .iml
+*.iml
+
+#misc
+.idea/libaries
