@@ -18,7 +18,7 @@ public class PersonConverter {
         return jsonUtils.deserializeJson(fileUtils.fetchFile(JSON_PATH), Person.class);
     }
 
-    public void serializeXml() {
-        xmlUtils.serializeToXml(Person.class, deserializePerson(), XML_PATH);
+    public void printPerson() {
+        System.out.println(deserializePerson().toString());
     }
 }

@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import service.PersonConverter;
 
-//@SpringBootApplication
+@SpringBootApplication
 public class Json2xmlApplication {
 
 	public static void main(String[] args) {
