@@ -25,6 +25,5 @@ public class Converter {
         Marshaller marshaller = context.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         marshaller.marshal(person, new FileOutputStream("src/main/resources/xml/person.xml"));
-
     }
 }
