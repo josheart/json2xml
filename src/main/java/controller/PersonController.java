@@ -10,6 +10,6 @@ public class PersonController {
     PersonConverter personConverter;
 
     public void convert() {
-        personConverter.serializeXml();
+        personConverter.printPerson();
     }
 }
