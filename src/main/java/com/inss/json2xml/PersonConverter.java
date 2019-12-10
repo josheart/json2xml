@@ -1,15 +1,14 @@
-package service;
+package com.inss.json2xml;
 
 import model.Person;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import util.FileUtils;
 import util.JsonUtils;
-import util.XmlUtils;
 
 import java.sql.SQLOutput;
 
-@Service
+@Component
 public class PersonConverter {
 //
 //    private static FileUtils fileUtils = new FileUtils();
