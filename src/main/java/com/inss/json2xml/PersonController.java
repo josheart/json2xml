@@ -12,7 +12,6 @@ public class PersonController {
     @Autowired
     PersonConverter personConverter;
 
-    @GetMapping
     public void convert() {
         personConverter.serializeXml();
     }
