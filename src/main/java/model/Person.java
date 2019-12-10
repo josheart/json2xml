@@ -1,5 +1,7 @@
 package model;
 
+import org.springframework.stereotype.Component;
+
 import javax.json.bind.annotation.JsonbProperty;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
