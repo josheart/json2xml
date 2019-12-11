@@ -1,6 +1,7 @@
 package com.inss.json2xml.controller;
 
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.inss.json2xml.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -9,7 +10,6 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class PersonController {
-
 
     @Autowired
     PersonService personService;
@@ -20,5 +20,11 @@ public class PersonController {
     public void convert() {
         personService.printHello();
         candidateService.printCandidateName();
+        try {
+            personService.printJackson();
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
     }
+
 }

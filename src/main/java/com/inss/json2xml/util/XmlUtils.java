@@ -1,11 +1,14 @@
 package com.inss.json2xml.util;
 
+import org.springframework.stereotype.Component;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+@Component
 public class XmlUtils {
 
     public static void serializeToXml(Class<?> T, Object object, String filePath) {
