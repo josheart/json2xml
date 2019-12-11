@@ -1,21 +1,24 @@
-package com.inss.json2xml;
+package com.inss.json2xml.controller;
 
 
+import com.inss.json2xml.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import service.CandidateService;
+import com.inss.json2xml.service.CandidateService;
+import org.springframework.stereotype.Controller;
 
-@Component
+@Controller
 public class PersonController {
 
 
     @Autowired
-    PersonConverter personConverter;
+    PersonService personService;
+
     @Autowired
     CandidateService candidateService;
 
     public void convert() {
-        personConverter.serializeXml();
+        personService.printHello();
         candidateService.printCandidateName();
     }
 }

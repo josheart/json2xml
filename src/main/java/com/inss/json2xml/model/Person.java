@@ -1,11 +1,8 @@
-package model;
-
-import org.springframework.stereotype.Component;
+package com.inss.json2xml.model;
 
 import javax.json.bind.annotation.JsonbProperty;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.List;
 
 @XmlRootElement
 public class Person {

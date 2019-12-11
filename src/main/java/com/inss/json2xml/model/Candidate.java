@@ -1,4 +1,4 @@
-package model;
+package com.inss.json2xml.model;
 
 import org.springframework.stereotype.Component;
 

@@ -1,5 +1,6 @@
 package com.inss.json2xml;
 
+import com.inss.json2xml.controller.PersonController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

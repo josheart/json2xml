@@ -1,4 +1,4 @@
-package util;
+package com.inss.json2xml.util;
 
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
