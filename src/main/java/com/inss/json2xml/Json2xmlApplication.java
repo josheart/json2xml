@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import static java.lang.System.exit;
+
 @SpringBootApplication
 public class Json2xmlApplication {
 
@@ -17,6 +19,6 @@ public class Json2xmlApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(Json2xmlApplication.class, args);
         personController.convert();
-	}
+    }
 
 }
