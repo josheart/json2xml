@@ -8,6 +8,7 @@ class Json2xmlApplicationTests {
 
 	@Test
 	void contextLoads() {
+        System.out.println("Hi");
 	}
 
 }
