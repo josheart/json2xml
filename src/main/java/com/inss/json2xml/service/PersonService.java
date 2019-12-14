@@ -5,7 +5,6 @@ import com.inss.json2xml.model.Candidate;
 import com.inss.json2xml.model.Person;
 import com.inss.json2xml.util.FileUtils;
 import com.inss.json2xml.util.JsonUtils;
-import com.inss.json2xml.util.XmlUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
